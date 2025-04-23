@@ -1,0 +1,18 @@
+{
+  "name": "projectx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:weather": "cd saapalvelin    && npm start",
+    "start:blog":    "cd blogipalvelin && npm start",
+    "start:news":    "cd uustissivusto && npm start",
+    "start:all":     "concurrently \"npm run start:weather\" \"npm run start:blog\" \"npm run start:news\" && echo Uutissivusto: http://localhost:3004/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
